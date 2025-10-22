@@ -1,6 +1,6 @@
 We will follow modular rules for API Development
 
-1. Interface
+1. Interface / Type definition for api
 2. Model & Mongoose schema
 3. zod validation schema
 4. routes
