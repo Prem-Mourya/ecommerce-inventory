@@ -30,5 +30,5 @@ const ProductSchema = new Schema<TProduct>({
   inventory: InventorySchema,
 });
 
-// Creating model now
+// Creating model
 export const Product = model("Product", ProductSchema);

@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import { ProductRoutes } from "./app/modules/products/product.routes.js";
+import { OrdersRoutes } from "./app/modules/orders/order.routes.js";
 const app = express();
 
 // parsers option
@@ -9,6 +10,7 @@ app.use(cors());
 
 // routes
 app.use("/api/products", ProductRoutes);
+app.use("/api/orders", OrdersRoutes);
 
 app.get("/", (req, res) => {
   res.send("Hello Prem! Ecommerce Inventory Server is running");
